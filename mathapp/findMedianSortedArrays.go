@@ -1,16 +1,12 @@
 package main
-
 import "fmt"
-
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	len1,len2 := len(nums1),len(nums2)
-
 	zzz := len1+len2
 	//fmt.Println(zzz)
 
 	// var newArr [zzz]int
 	newArr := make([]int,zzz)
-
 	counter := 0
 	num2_conter_temp := -1
 	if len1 !=0 && len2!=0{
@@ -43,6 +39,7 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	}else {
 		newArr = append(nums1,nums2...)
 	}
+
 
 
 	centerNum := 0.0
