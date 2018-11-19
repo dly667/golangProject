@@ -2,10 +2,12 @@ package parser
 
 import (
 	"Crawler/engine"
+
 	"regexp"
 )
 
 const CityRe = `<a href="(http://album.zhenai.com/u/[\d]+)" target="_blank">([^<]+)</a>`
+
 func ParserCity(contents []byte) engine.ParseResult {
 	result := engine.ParseResult{}
 	re := regexp.MustCompile(CityRe)

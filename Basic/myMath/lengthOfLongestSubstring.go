@@ -39,7 +39,6 @@ func getChineseString(s string) int{
 
 func main()  {
 
-
 	a := lengthOfLongestSubstring("abacsad")
 	fmt.Println(a)
 

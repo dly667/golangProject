@@ -22,7 +22,7 @@ func ParseCityList(contents []byte) engine.ParseResult{
 
 		})
 		//fmt.Printf("City: %s Url: %s\n",item[2],item[1])
-		break
+		//break
 	}
 	return result
 }
